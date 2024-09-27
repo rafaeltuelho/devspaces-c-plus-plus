@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build current algorithm",
+            "type": "shell",
+            "command": "rm -f '${file}.bin.out' && g++ -g '${file}' -o '${file}.bin.out' && echo 'Build complete'",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run current algorithm",
+            "type": "shell",
+            "command": "if [[ ! -f '${file}.bin.out' ]]; then g++ -g '${file}' -o '${file}.bin.out'; fi; '${file}.bin.out'",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}

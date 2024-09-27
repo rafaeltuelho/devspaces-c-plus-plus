@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "name": "Debug current algorithm",
+            "request": "launch",
+            "program": "${file}.bin.out"
+        }
+    ]
+}
