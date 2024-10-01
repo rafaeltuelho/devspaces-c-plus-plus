@@ -8,8 +8,7 @@ void librarySort(int *index, int n) {
 
     bool target_lib, *numbered;
 
-    for (int i = 0; i < 2; i++)
-        library[i] = new int[n];
+    for (int i = 0; i < 2; i++) library[i] = new int[n];
 
     gaps = new int[n + 1];
     numbered = new bool[n + 1];
@@ -70,6 +69,11 @@ void librarySort(int *index, int n) {
             index_pos_for_output++;
         }
     }
+    delete[] numbered;
+    delete[] gaps;
+    for (int i = 0; i < 2; ++i) {
+        delete[] library[i];
+    }
 }
 
 int main() {
@@ -79,8 +83,7 @@ int main() {
 
     librarySort(index_ex, n_ex);
     std::cout << "sorted array :" << std::endl;
-    for (int i = 0; i < n_ex; i++)
-        std::cout << index_ex[i] << " ";
+    for (int i = 0; i < n_ex; i++) std::cout << index_ex[i] << " ";
     std::cout << std::endl;
 
     /* --output--

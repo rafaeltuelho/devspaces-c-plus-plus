@@ -1,10 +1,20 @@
-# The Algorithms - C++ 
-[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTION.md)&nbsp;
-![GitHub repo size](https://img.shields.io/github/repo-size/TheAlgorithms/C-Plus-Plus?color=red&style=flat-square)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/TheAlgorithms/C-Plus-Plus?color=green&style=flat-square)
+# About this repo 
 
-### All algorithms implemented in C++ (for education)
-The implementations are for learning purpose. They may be less efficient than the implementation in the standard library.
+This repository contains a copy of the [**The Algorithms - C++**](https://github.com/TheAlgorithms/C-Plus-Plus) with aditional configuration to work on Openshift Dev Spaces (Eclipse Che) VSCode based IDE.
 
-### Contribute Guidelines
-Read our [Contribution Guidelines](https://github.com/TheAlgorithms/C-Plus-Plus/blob/master/CONTRIBUTION.md) before you contribute.
+To compile the C++ code contained in this repo just open a Terminal and
+
+ * using `cmake` and `make`
+```bash
+cd math/
+cmake .
+make
+```
+
+ * using `g++` compiler
+```bash
+cd math/
+g++ -g fibonacci.cpp -o fiboncci.bin
+./fibonacci.bin
+```
+

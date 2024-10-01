@@ -3,6 +3,7 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     "eclipse-cdt.cdt-gdb-vscode",
-    "llvm-vs-code-extensions.vscode-clangd"
+    "llvm-vs-code-extensions.vscode-clangd",
+    "twxs.cmake"
   ]
 }

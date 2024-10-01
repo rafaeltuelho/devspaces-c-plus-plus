@@ -6,7 +6,7 @@
         {
             "label": "Build current algorithm",
             "type": "shell",
-            "command": "rm -f '${file}.bin.out' && g++ -g '${file}' -o '${file}.bin.out' && echo 'Build complete'",
+            "command": "rm -f '${fileBasenameNoExtension}.bin' && g++ -g '${file}' -o '${fileBasenameNoExtension}.bin' && echo 'Build complete'",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -16,7 +16,7 @@
         {
             "label": "Run current algorithm",
             "type": "shell",
-            "command": "if [[ ! -f '${file}.bin.out' ]]; then g++ -g '${file}' -o '${file}.bin.out'; fi; '${file}.bin.out'",
+            "command": "if [[ ! -f '${fileBasenameNoExtension}.bin' ]]; then g++ -g '${file}' -o '${fileBasenameNoExtension}.bin'; fi; '${fileBasenameNoExtension}.bin'",
             "problemMatcher": [],
             "group": {
                 "kind": "test",
