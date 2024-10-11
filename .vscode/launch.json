@@ -7,7 +7,7 @@
       "name": "Debug current algorithm",
       "request": "launch",
       "cwd": "${fileWorkspaceFolder}${/}${fileDirnameBasename}",
-      "program": "${fileBasenameNoExtension}"
+      "program": "${fileBasenameNoExtension}.bin"
     }
   ]
 }
